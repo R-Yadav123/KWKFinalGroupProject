@@ -14,7 +14,7 @@
             <objects>
                 <viewController id="eqv-Yx-odT" customClass="statsViewController" customModule="KWKFinalProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Fi2-1M-pZ7">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="15z-Ed-rBh">
@@ -40,6 +40,7 @@
                         <viewLayoutGuide key="safeArea" id="1IV-VX-bcd"/>
                         <color key="backgroundColor" red="0.97254908080000002" green="0.94901961089999998" blue="0.87450981139999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Qhn-sb-gLh"/>
                     <connections>
                         <outlet property="text" destination="aHz-04-Kg2" id="toh-v9-YmL"/>
                     </connections>
@@ -47,7 +48,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D3i-uv-Ff7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="gfd-Kj-2SH" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-1033.3333333333335" y="-30.133928571428569"/>
+            <point key="canvasLocation" x="1561" y="68"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="3ra-9t-Z1b">
@@ -78,6 +79,21 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" systemColor="labelColor"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="note.text" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="L1A-A1-2dx">
+                                <rect key="frame" x="138" y="742" width="138" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.42015142478715883" green="0.5" blue="0.1092935298575477" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1aP-bB-4zp">
+                                <rect key="frame" x="171" y="738" width="72" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="1" green="0.97155615849999999" blue="0.92253684280000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title=""/>
+                                <connections>
+                                    <segue destination="eqv-Yx-odT" kind="show" id="fY8-5w-lgQ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4Pg-3P-Rjd"/>
                         <color key="backgroundColor" red="1" green="0.97155615848721322" blue="0.92253684277766734" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -86,7 +102,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mGW-BB-YNL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="57.971014492753625" y="46.875"/>
+            <point key="canvasLocation" x="-249.27536231884059" y="87.723214285714278"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="fe5-rk-yeF">
@@ -194,11 +210,12 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lz9-Ze-6pp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="Q9O-iW-o1q" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="742" y="47"/>
+            <point key="canvasLocation" x="571" y="68"/>
         </scene>
     </scenes>
     <resources>
         <image name="homekit" catalog="system" width="128" height="106"/>
+        <image name="note.text" catalog="system" width="128" height="106"/>
         <image name="pawprint.circle" catalog="system" width="128" height="121"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
