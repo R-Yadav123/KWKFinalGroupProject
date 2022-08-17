@@ -50,7 +50,7 @@
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7bP-uS-VHX"/>
-                        <color key="backgroundColor" red="0.94100848179812624" green="0.90644900764551428" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.97254908080000002" green="0.94901961089999998" blue="0.87450981139999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lz9-Ze-6pp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
