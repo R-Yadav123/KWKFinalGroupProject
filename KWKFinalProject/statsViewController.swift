@@ -9,10 +9,14 @@ import UIKit
 
 class statsViewController: UIViewController {
 
-    @IBOutlet weak var text: UITextView!
     
-    let randomNumber = Int.random(in: 0..<2)
-        var petFacts = ["Seventy percent of U.S. households, or about 90.5 million families, own a pet", "Total pet industry expenditures in the U.S. totaled $123.6 billion, up 19 percent from $103.6 billion in 2020."]
+    
+       
+    @IBOutlet weak var textView: UITextView!
+    
+    var petFacts = ["Almost half of the pet owners believe that picking the correct diet is one of the most difficult parts of being a pet owner.", " Almost one in four dog owners feel overwhelmed by the number of food options available.", "More than half of all dog owners think that picking the correct type of dog food and the amount is more confusing than picking their food.", "A small number of dog owners believe that feeding dogs raw eggs will make their dogs' coat more shiny; that is not true.", "Test"]
+ 
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -21,10 +25,12 @@ class statsViewController: UIViewController {
     }
     
 
-    @IBAction func facts(_ sender: UIButton) {
-        text.text = petFacts[randomNumber]
-
+  
+    @IBAction func funFacts(_ sender: UIButton) {
+        let randomNumber = Int.random(in: 0..<5)
+        textView.text = petFacts[randomNumber]
     }
+    
     
     
 
