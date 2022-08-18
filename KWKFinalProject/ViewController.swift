@@ -7,29 +7,49 @@
 
 import UIKit
 
-class ViewController: UIViewController, UIImagePickerControllerDelegate {
+class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
+    
 
+   var name = ""
+    
     var imagePicker = UIImagePickerController()
 
+    @IBOutlet weak var textField1: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
+        imagePicker.delegate = self
     }
+   
 
+  
     @IBAction func btn(_ sender: UIButton) {
         imagePicker.sourceType = .photoLibrary
         
         present(imagePicker, animated: true, completion: nil)
-    }
+   }
     
     
-    @IBOutlet weak var displayImage: UIImageView!
+   @IBOutlet weak var displayImage: UIImageView!
     
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+   func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         
-        if let selectedImage = info [UIImagePickerController.InfoKey.originalImage] as? UIImage {
+       if let selectedImage = info [UIImagePickerController.InfoKey.originalImage] as? UIImage {
             displayImage.image = selectedImage
         }
-        imagePicker.dismiss(animated: true, completion: nil)
+       imagePicker.dismiss(animated: true, completion: nil)
+    }
+    
+ 
+    @IBAction func createButton(_ sender: UIButton) {
+        self.name  = textField1.text!
+        performSegue(withIdentifier: "namesegue", sender: self)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? NewUserCreatedViewController {
+            vc.finalName = self.name
+        }
     }
 }
+
+
 
