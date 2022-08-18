@@ -11,7 +11,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
 
    var name = ""
-    
+   var age = ""
+   var weight = ""
     var imagePicker = UIImagePickerController()
 
     @IBOutlet weak var textField1: UITextField!
@@ -46,8 +47,15 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let vc = segue.destination as? NewUserCreatedViewController {
-            vc.finalName = self.name
+            vc.finalAge = self.age
         }
+       // if let vc = segue.destination as? NewUserCreatedViewController {
+      //      vc.finalAge = self.age
+      //  }
+      //  if let vc = segue.destination as? NewUserCreatedViewController {
+       //     vc.finalWeight = self.weight
+      //  }
+
     }
 }
 
