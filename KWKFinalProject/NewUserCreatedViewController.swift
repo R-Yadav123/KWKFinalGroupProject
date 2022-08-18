@@ -20,8 +20,8 @@ class NewUserCreatedViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         nameLabel.text = ("View recommended food diet for \(finalName)")
-        ageLabel.text = ("\(finalAge)")
-        weightLabel.text = ("\(finalWeight)")
+        ageLabel.text = ("Age: \(finalAge)")
+        weightLabel.text = ("Weight: \(finalWeight)")
         // Do any additional setup after loading the view.
     }
     
