@@ -13,7 +13,7 @@ class NewUserCreatedViewController: UIViewController {
     var finalName = ""
     override func viewDidLoad() {
         super.viewDidLoad()
-        nameLabel.text = ("Welcome, \(finalName)")
+        nameLabel.text = ("View recommended food diets for \(finalName)")
         // Do any additional setup after loading the view.
     }
     
