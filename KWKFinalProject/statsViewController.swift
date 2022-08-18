@@ -14,7 +14,7 @@ class statsViewController: UIViewController {
        
     @IBOutlet weak var textView: UITextView!
     
-    var petFacts = ["Almost half of the pet owners believe that picking the correct diet is one of the most difficult parts of being a pet owner.", " Almost one in four dog owners feel overwhelmed by the number of food options available.", "More than half of all dog owners think that picking the correct type of dog food and the amount is more confusing than picking their food.", "A small number of dog owners believe that feeding dogs raw eggs will make their dogs' coat more shiny; that is not true.", "Test"]
+    var petFacts = ["Almost half of the pet owners believe that picking the correct diet is one of the most difficult parts of being a pet owner.", " Almost one in four dog owners feel overwhelmed by the number of food options available.", "More than half of all dog owners think that picking the correct type of dog food and the amount is more confusing than picking their food.", "A small number of dog owners believe that feeding dogs raw eggs will make their dogs' coat more shiny; that is not true.", "70% of the United States population are pet owners."]
  
    
     override func viewDidLoad() {
