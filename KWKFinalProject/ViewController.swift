@@ -16,6 +16,11 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     var imagePicker = UIImagePickerController()
 
     @IBOutlet weak var textField1: UITextField!
+    
+    @IBOutlet weak var textField2: UITextField!
+    
+    
+    @IBOutlet weak var textField3: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         imagePicker.delegate = self
@@ -43,18 +48,22 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
  
     @IBAction func createButton(_ sender: UIButton) {
         self.name  = textField1.text!
+        self.age = textField2.text!
+        self.weight = textField3.text!
         performSegue(withIdentifier: "namesegue", sender: self)
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let vc = segue.destination as? NewUserCreatedViewController {
+            vc.finalName = self.name
             vc.finalAge = self.age
+            vc.finalWeight = self.weight
         }
-       // if let vc = segue.destination as? NewUserCreatedViewController {
-      //      vc.finalAge = self.age
-      //  }
-      //  if let vc = segue.destination as? NewUserCreatedViewController {
-       //     vc.finalWeight = self.weight
-      //  }
+//        if let vc = segue.destination as? NewUserCreatedViewController {
+//            vc.finalAge = self.age
+//    }
+//        if let vc = segue.destination as? NewUserCreatedViewController {
+//            vc.finalWeight = self.weight
+//       }
 
     }
 }
