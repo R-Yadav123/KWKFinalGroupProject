@@ -51,13 +51,20 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         self.age = textField2.text!
         self.weight = textField3.text!
         performSegue(withIdentifier: "namesegue", sender: self)
+        performSegue(withIdentifier: "classes", sender: self)
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let vc = segue.destination as? NewUserCreatedViewController {
+        if let vc = segue.destination as? NewUserCreatedViewController{
             vc.finalName = self.name
             vc.finalAge = self.age
             vc.finalWeight = self.weight
         }
+        else if let vc = segue.destination as? NewUserCreated2ViewController {
+            vc.finalName = self.name
+            vc.finalAge = self.age
+            vc.finalWeight = self.weight
+        }
+         
 //        if let vc = segue.destination as? NewUserCreatedViewController {
 //            vc.finalAge = self.age
 //    }
@@ -66,6 +73,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 //       }
 
     }
+
 }
 
 

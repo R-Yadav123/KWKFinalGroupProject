@@ -291,7 +291,7 @@
                                     <segment title="Dog"/>
                                 </segments>
                                 <connections>
-                                    <segue destination="9pJ-QM-Mal" kind="show" id="lLK-Jm-Tpb"/>
+                                    <segue destination="9pJ-QM-Mal" kind="show" identifier="classes" id="KdQ-Yo-8g5"/>
                                 </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8gt-Ft-koN">
@@ -330,13 +330,6 @@
                                 <rect key="frame" x="72" y="497" width="208" height="123"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CREATE A PET PROFILE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="524-Dr-DJt">
-                                <rect key="frame" x="65" y="54" width="284" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="41"/>
-                                <color key="textColor" red="0.5411764979" green="0.69019609689999994" blue="0.61176472900000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Db-W0-P5T">
                                 <rect key="frame" x="316" y="692" width="83" height="86"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -364,6 +357,13 @@
                                     <segue destination="rVQ-et-Tgp" kind="show" id="ZxE-Re-6qo"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CREATE A PET PROFILE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="524-Dr-DJt">
+                                <rect key="frame" x="52" y="44" width="284" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="41"/>
+                                <color key="textColor" red="0.5411764979" green="0.69019609689999994" blue="0.61176472900000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7bP-uS-VHX"/>
                         <color key="backgroundColor" red="1" green="0.97155615849999999" blue="0.92253684280000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -381,10 +381,10 @@
             </objects>
             <point key="canvasLocation" x="569.56521739130437" y="67.633928571428569"/>
         </scene>
-        <!--View Controller-->
+        <!--New User Created2 View Controller-->
         <scene sceneID="Cjn-J9-Dhx">
             <objects>
-                <viewController id="9pJ-QM-Mal" sceneMemberID="viewController">
+                <viewController id="9pJ-QM-Mal" customClass="NewUserCreated2ViewController" customModule="KWKFinalProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="R8I-TT-ap3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -414,17 +414,12 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="040-EZ-ndb">
-                                        <rect key="frame" x="20" y="20" width="374" height="79"/>
+                                        <rect key="frame" x="20" y="20" width="374" height="74"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2022-08-18 at 5.51.43 PM" translatesAutoresizingMaskIntoConstraints="NO" id="HEV-Ub-K6E">
-                                        <rect key="frame" x="-22" y="277" width="317" height="190"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TPs-WV-FIw">
                                         <rect key="frame" x="8" y="173" width="246" height="96"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -444,6 +439,11 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="tintColor" systemColor="labelColor"/>
                                     </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2022-08-18 at 5.51.43 PM" translatesAutoresizingMaskIntoConstraints="NO" id="HEV-Ub-K6E">
+                                        <rect key="frame" x="-17" y="246" width="311" height="164"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </imageView>
                                 </subviews>
                                 <viewLayoutGuide key="safeArea" id="x06-fa-ljb"/>
                                 <color key="backgroundColor" red="0.99264627699999997" green="0.96936410669999995" blue="0.92156141999999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -453,6 +453,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="1lv-wF-c1X"/>
+                    <connections>
+                        <outlet property="ageLabel" destination="e3p-Jj-cra" id="pqX-xG-Vjm"/>
+                        <outlet property="nameLabel" destination="040-EZ-ndb" id="ezn-kv-Iq7"/>
+                        <outlet property="weightLabel" destination="TPs-WV-FIw" id="hzh-QA-J8u"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iT4-pr-87i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -739,13 +744,6 @@
                                 <attributedString key="attributedText"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4lc-F0-6VL">
-                                <rect key="frame" x="0.0" y="102" width="295" height="99"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ew3-5l-iUr">
                                 <rect key="frame" x="186" y="238" width="0.0" height="0.0"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -761,14 +759,21 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vTw-Fy-u6X">
-                                <rect key="frame" x="0.0" y="173" width="254" height="96"/>
+                                <rect key="frame" x="67" y="164" width="248" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="18"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CM5-Tv-gpt">
-                                <rect key="frame" x="20" y="277" width="254" height="146"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fkb-1N-gAV">
+                                <rect key="frame" x="67" y="88" width="281" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2022-08-18 at 5.51.29 PM" translatesAutoresizingMaskIntoConstraints="NO" id="CM5-Tv-gpt">
+                                <rect key="frame" x="0.0" y="272" width="307" height="212"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -777,7 +782,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="EXx-vS-qxG"/>
                     <connections>
-                        <outlet property="ageLabel" destination="4lc-F0-6VL" id="tfB-oR-skN"/>
+                        <outlet property="ageLabel" destination="Fkb-1N-gAV" id="dkK-91-BDy"/>
                         <outlet property="nameLabel" destination="kAW-nY-vQn" id="l7M-b6-VLq"/>
                         <outlet property="weightLabel" destination="vTw-Fy-u6X" id="VcB-qD-UUe"/>
                     </connections>
@@ -821,19 +826,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2022-08-18 at 3.56.51 PM" translatesAutoresizingMaskIntoConstraints="NO" id="YoI-LA-c2l">
-                                <rect key="frame" x="-20" y="295" width="317" height="190"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2022-08-18 at 4.04.08 PM" translatesAutoresizingMaskIntoConstraints="NO" id="k4n-2A-9XE">
-                                <rect key="frame" x="0.0" y="191" width="139" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2022-08-18 at 4.03.59 PM" translatesAutoresizingMaskIntoConstraints="NO" id="7fh-OX-ZFW">
-                                <rect key="frame" x="-20" y="119" width="138" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yKw-IP-zTL">
                                 <rect key="frame" x="78" y="173" width="176" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -841,9 +833,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cSH-XJ-nkf">
+                                <rect key="frame" x="255" y="601" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2022-08-18 at 5.51.29 PM" translatesAutoresizingMaskIntoConstraints="NO" id="s3f-n5-9E0">
+                                <rect key="frame" x="24" y="425" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="PeB-E6-qlQ"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.99264627699999997" green="0.96936410669999995" blue="0.92156141999999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="Yvd-3Q-HaE"/>
                     <connections>
@@ -858,15 +861,12 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="epm-Uc-3s2"/>
+        <segue reference="wJi-ff-Jcc"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Pawsibiltes_Logo" width="2048" height="2048"/>
         <image name="Screen Shot 2022-08-17 at 4.41.18 PM" width="594" height="202"/>
         <image name="Screen Shot 2022-08-17 at 4.50.52 PM" width="464" height="212"/>
-        <image name="Screen Shot 2022-08-18 at 3.56.51 PM" width="798" height="572"/>
-        <image name="Screen Shot 2022-08-18 at 4.03.59 PM" width="184" height="98"/>
-        <image name="Screen Shot 2022-08-18 at 4.04.08 PM" width="260" height="92"/>
         <image name="Screen Shot 2022-08-18 at 5.51.29 PM" width="660" height="500"/>
         <image name="Screen Shot 2022-08-18 at 5.51.43 PM" width="630" height="468"/>
         <image name="Screen Shot 2022-08-18 at 6.15.28 PM" width="712" height="840"/>

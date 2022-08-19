@@ -1,20 +1,20 @@
 //
-//  NewUserCreatedViewController.swift
+//  NewUserCreated2ViewController.swift
 //  KWKFinalProject
 //
-//  Created by Achal Yadav on 8/17/22.
+//  Created by Achal Yadav on 8/18/22.
 //
 
 import UIKit
 
-class NewUserCreatedViewController: UIViewController {
+class NewUserCreated2ViewController: UIViewController {
     
-    @IBOutlet weak var nameLabel: UILabel!
     
    
-    @IBOutlet weak var ageLabel: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
     
     @IBOutlet weak var weightLabel: UILabel!
+    @IBOutlet weak var ageLabel: UILabel!
     var finalName = ""
     var finalAge = ""
     var finalWeight = ""
